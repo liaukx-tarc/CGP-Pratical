@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Pratical_1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Graphic.cpp
+c:\users\user\desktop\cgp pratical\pratical_1\graphic.cpp(57): warning C4805: '==': unsafe mix of type 'BOOL' and type 'bool' in operation
+  main.cpp
+  Sprite.cpp
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(147): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(154): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+  windows.cpp
+c:\users\user\desktop\cgp pratical\pratical_1\windows.cpp(35): warning C4101: 'keyIn': unreferenced local variable
+  Generating Code...
+  Pratical_1.vcxproj -> C:\Users\user\Desktop\CGP Pratical\Debug\CGP_Pratical.exe
