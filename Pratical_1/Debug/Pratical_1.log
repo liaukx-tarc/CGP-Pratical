@@ -1,16 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Pratical_1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Graphic.cpp
-c:\users\user\desktop\cgp pratical\pratical_1\graphic.cpp(57): warning C4805: '==': unsafe mix of type 'BOOL' and type 'bool' in operation
   Sprite.cpp
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(182): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(189): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(226): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(230): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(234): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(276): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(280): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(284): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(288): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-  main.cpp
-  Generating Code...
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(210): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(217): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(254): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(258): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(262): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(304): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(308): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(312): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(316): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(371): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
   Pratical_1.vcxproj -> C:\Users\user\Desktop\CGP Pratical\Debug\CGP_Pratical.exe
