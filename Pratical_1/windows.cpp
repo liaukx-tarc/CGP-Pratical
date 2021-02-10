@@ -1,5 +1,6 @@
 #include "Windows.h"
 #include "Graphic.h"
+#include "Sprite.h"
 
 //Singleton
 LiauWindows* LiauWindows::sInstance = NULL;

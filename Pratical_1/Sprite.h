@@ -8,19 +8,19 @@ private:
 	Sprite();
 
 public:
+	static Sprite* getInstance();
+	static void releaseInsrance();
+
+	//Practical 3
 	RECT spriteRect;
 
 	LPDIRECT3DTEXTURE9 texture;
 	LPDIRECT3DTEXTURE9 texture2;
 	LPDIRECT3DTEXTURE9 texture3;
 	LPDIRECT3DTEXTURE9 cursorTexture;
-
 	LPD3DXSPRITE sprite;
 	
 	int viewMode,changeMode;
-
-	static Sprite* getInstance();
-	static void releaseInsrance();
 	int spriteX, spriteY, keyIn, bgTexture, cursorColor;
 
 	bool createSprite();
@@ -31,6 +31,14 @@ public:
 	void cursorDraw();
 	void backgroundChange();
 	void cursorColorChange();
+
+	//Practical 4
+	RECT RectList[16];
+	LPDIRECT3DTEXTURE9 numberTexture;
+
+	int num;
+
+	void drawNum();
 
 };
 

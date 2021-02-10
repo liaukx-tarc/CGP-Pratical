@@ -1,0 +1,54 @@
+Practical 2
+------------------------------------------------------
+(Want to use the RGB function please uncomment the "setRGB()" in "Graphic::present()")
+
+full screen			= f
+speed++				= i
+speed--				= o
+
+MaxZero mode		= 1 (Not Numpad)
+MaxDecrease mode	= 2 (Not Numpad)
+MaxStop mode		= 3 (Not Numpad)
+RandomRGB mode		= 4 (Not Numpad)
+
+increase Red		= r
+decrease Red		= t
+increase Green		= g
+decrease Green		= h
+increase Blue		= b
+decrease Blue		= n
+random RGB			= r
+------------------------------------------------------
+
+Practical 3
+------------------------------------------------------
+Fix view			= 1 (Numpad)
+Smaller view		= 2 (Numpad)
+Larger view			= 3 (Numpad)
+Move up				= key up
+Move down			= key down
+Move right			= key right
+Move left			= key left
+
+Move Sprite mode		= [
+change Background mode	= ]
+
+change previous background		= key up
+change next background			= key down
+
+change previous cursor color	= key right
+change next cursor color		= key left
+------------------------------------------------------
+
+Practical 4
+------------------------------------------------------
+display Num mode	= \
+
+Number 0-9	= 0-9 (Not Numpad)
+"="			= = (Not Numpad)
+"."			= . (Numpad)
+"+"			= + (Numpad)
+"-"			= - (Numpad)
+"*"			= * (Numpad)
+"/"			= / (Numpad)
+------------------------------------------------------

@@ -88,7 +88,7 @@ void Graphic::present()
 	if (LiauWindows::getInstance()->keyIn != 0)
 	{
 		fullscreen();
-		SetRGB();
+		//SetRGB();
 		Sprite::getInstance()->changeView();
 	}
 	

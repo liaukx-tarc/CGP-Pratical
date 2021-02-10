@@ -148,6 +148,9 @@
   <ItemGroup>
     <Image Include="..\resource\program_icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="User Manual.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

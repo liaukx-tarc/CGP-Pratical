@@ -35,6 +35,7 @@ Sprite::Sprite()
 
 bool Sprite::createSprite()
 {
+	//Practical 3
 	HRESULT hr = D3DXCreateSprite(Graphic::getInstance()->d3dDevice, &sprite);
 
 	hr = D3DXCreateTextureFromFile(Graphic::getInstance()->d3dDevice, "resource/bg1.png", &texture);
@@ -46,6 +47,24 @@ bool Sprite::createSprite()
 	spriteRect.left = spriteRect.top = 0;
 	spriteRect.right = 400;
 	spriteRect.bottom = 300;
+
+
+	//Pratical 4
+	hr = D3DXCreateTextureFromFileEx(Graphic::getInstance()->d3dDevice, "resource/numbers.bmp", D3DX_DEFAULT, D3DX_DEFAULT,
+		D3DX_DEFAULT, NULL, D3DFMT_A8R8G8B8, D3DPOOL_MANAGED,
+		D3DX_DEFAULT, D3DX_DEFAULT, D3DCOLOR_XRGB(0, 128, 0), //change the XRGB to ignore the color
+		NULL, NULL, &numberTexture);
+
+	for (int r = 0; r < 4; r++)
+	{
+		for (int c = 0; c < 4; c++)
+		{
+			RectList[r * 4 + c].left = 32 * c;
+			RectList[r * 4 + c].top = 32 * r;
+			RectList[r * 4 + c].right = 32 * c + 32;
+			RectList[r * 4 + c].bottom = 32 * r + 32;
+		}
+	}
 
 	if (FAILED(hr))
 	{
@@ -69,11 +88,14 @@ void Sprite::drawSprite()
 			changeMode = 2;
 			break;
 
+		case 220:
+			changeMode = 3;
+			break;
+
 		default:
 			break;
 		}
 	}
-
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
 
 	switch (changeMode)
@@ -88,6 +110,12 @@ void Sprite::drawSprite()
 	case 2:
 		backgroundChange();
 		cursorColorChange();
+		break;
+
+	case 3:
+		drawNum();
+		break;
+
 	default:
 		break;
 	}
@@ -107,9 +135,9 @@ void Sprite::clearSprite()
 void Sprite::changeView()
 {
 	int keyIn = LiauWindows::getInstance()->keyIn;
-	if (keyIn >= 55 && keyIn <= 57)
+	if (keyIn >= 97 && keyIn <= 99)
 	{
-		viewMode = keyIn - 54;
+		viewMode = keyIn - 96;
 		switch (viewMode)
 		{
 		case 1:
@@ -291,4 +319,54 @@ void Sprite::cursorColorChange()
 	default:
 		break;
 	}
+}
+
+void Sprite::drawNum()
+{
+	keyIn = LiauWindows::getInstance()->keyIn;
+	int weight = Graphic::getInstance()->d3dPP.BackBufferWidth / 2;
+	int hight = Graphic::getInstance()->d3dPP.BackBufferHeight / 2;
+
+	if (keyIn != 0)
+	{
+		if (keyIn >= 48 && keyIn <= 57)
+		{
+			num = keyIn - 48;
+		}
+
+		else if (keyIn == 110)
+		{
+			num = 10;
+		}
+
+		else if (keyIn == 187)
+		{
+			num = 11;
+		}
+
+		else if (keyIn == 107)
+		{
+			num = 12;
+		}
+
+		else if (keyIn == 109)
+		{
+			num = 13;
+		}
+
+		else if (keyIn == 106)
+		{
+			num = 14;
+		}
+
+		else if (keyIn == 111)
+		{
+			num = 15;
+		}
+	}
+
+	Graphic::getInstance()->red = 64;
+	Graphic::getInstance()->green = 128;
+	Graphic::getInstance()->blue = 255;
+	sprite->Draw(numberTexture, &RectList[num], &D3DXVECTOR3(16, 16, 0), &D3DXVECTOR3(weight, hight, 0), D3DCOLOR_XRGB(128, 0, 128));
 }
