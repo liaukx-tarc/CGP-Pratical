@@ -55,7 +55,6 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM 
 																Graphic::getInstance()->blue);
 		break;
 
-
 	case WM_MOUSEMOVE:
 		LiauWindows::getInstance()->mouseX = LOWORD(lParam);
 		LiauWindows::getInstance()->mouseY = HIWORD(lParam);

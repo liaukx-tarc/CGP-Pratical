@@ -1,6 +1,7 @@
 #include "Graphic.h"
 #include "Windows.h"
 #include "Sprite.h"
+#include "Font.h"
 
 //singleton
 Graphic* Graphic::sInstance = NULL;
@@ -96,7 +97,8 @@ void Graphic::present()
 
 	d3dDevice->BeginScene();
 
-	Sprite::getInstance()->drawSprite();
+	//Sprite::getInstance()->drawSprite();
+	Font::getInstance()->write();
 
 	d3dDevice->EndScene();
 
