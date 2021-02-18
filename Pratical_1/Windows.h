@@ -23,5 +23,9 @@ public:
 	void createWindows();
 	void clearWindows();
 	bool loop();
+	void practicalChange();
+
+	//Practical change
+	int practical;
 };
 #endif

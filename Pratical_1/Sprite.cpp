@@ -31,6 +31,7 @@ Sprite::Sprite()
 	changeMode = 1;
 	bgTexture = 1;
 	cursorColor = 1;
+	practical = 1;
 }
 
 bool Sprite::createSprite()
@@ -76,8 +77,10 @@ bool Sprite::createSprite()
 
 void Sprite::drawSprite()
 {
+	keyIn = LiauWindows::getInstance()->keyIn;
 	if (keyIn != 0)
 	{
+		practical = LiauWindows::getInstance()->practical;
 		switch (keyIn)
 		{
 		case 219:
@@ -88,36 +91,37 @@ void Sprite::drawSprite()
 			changeMode = 2;
 			break;
 
-		case 220:
-			changeMode = 3;
+		default:
+			break;
+		}
+	}
+
+	sprite->Begin(D3DXSPRITE_ALPHABLEND);
+
+	if (practical == 3)
+	{
+		switch (changeMode)
+		{
+			//move sprite mode
+		case 1:
+			moveSprite();
+			cursorDraw();
+			break;
+
+			//change background and cursor color mode
+		case 2:
+			backgroundChange();
+			cursorColorChange();
 			break;
 
 		default:
 			break;
 		}
 	}
-	sprite->Begin(D3DXSPRITE_ALPHABLEND);
-
-	switch (changeMode)
+	
+	else if (practical == 4)
 	{
-		//move sprite mode
-	case 1:
-		moveSprite();
-		cursorDraw();
-		break;
-
-		//change background and cursor color mode
-	case 2:
-		backgroundChange();
-		cursorColorChange();
-		break;
-
-	case 3:
 		drawNum();
-		break;
-
-	default:
-		break;
 	}
 
 	sprite->End();
@@ -135,9 +139,23 @@ void Sprite::clearSprite()
 void Sprite::changeView()
 {
 	int keyIn = LiauWindows::getInstance()->keyIn;
-	if (keyIn >= 97 && keyIn <= 99)
+	if (keyIn == 188 || keyIn == 190 || keyIn==191)
 	{
-		viewMode = keyIn - 96;
+		if (keyIn == 188)
+		{
+			viewMode = 1;
+		}
+
+		else if (keyIn == 190)
+		{
+			viewMode = 2;
+		}
+
+		else
+		{
+			viewMode = 3;
+		}
+		
 		switch (viewMode)
 		{
 		case 1:
@@ -166,7 +184,6 @@ void Sprite::changeView()
 
 void Sprite::moveSprite()
 {
-	keyIn = LiauWindows::getInstance()->keyIn;
 	if (keyIn >= 37 && keyIn <= 40)
 	{
 		int bufferH = Graphic::getInstance()->d3dPP.BackBufferHeight;

@@ -27,6 +27,10 @@ Graphic::Graphic()
 	ZeroMemory(&d3dPP, sizeof(d3dPP));;
 	d3dDevice = NULL;
 	direct3D9 = NULL;
+	practical = 1;
+	prePractical = 1;
+	speed = 1;
+	mode = 1;
 }
 
 bool Graphic::createDirectX()
@@ -76,9 +80,7 @@ void Graphic::resetGraphic()
 {
 	Sprite::getInstance()->sprite->Release();
 	Sprite::getInstance()->sprite = NULL;
-
-	if (FAILED(d3dDevice->Reset(&d3dPP) ||
-		D3DXCreateSprite(Graphic::getInstance()->d3dDevice, &Sprite::getInstance()->sprite)))
+	if (FAILED(d3dDevice->Reset(&d3dPP)|| D3DXCreateSprite(Graphic::getInstance()->d3dDevice, &Sprite::getInstance()->sprite)))
 	{
 		PostQuitMessage(0);
 	}
@@ -88,17 +90,54 @@ void Graphic::present()
 {
 	if (LiauWindows::getInstance()->keyIn != 0)
 	{
-		fullscreen();
-		//SetRGB();
-		Sprite::getInstance()->changeView();
+		prePractical = practical;
+		practical = LiauWindows::getInstance()->practical;
+
+		if (practical == 2)
+		{
+			fullscreen();
+			SetRGB();
+		}
+		
+		else if (practical == 3)
+		{
+			if (prePractical == 5)
+			{
+				Font::getInstance()->sprite->Release();
+				Font::getInstance()->sprite = NULL;
+			}
+			Sprite::getInstance()->changeView();
+		}
+
+		else if (practical == 5)
+		{
+			if (prePractical == 3 || prePractical == 4)
+			{
+				D3DXCreateSprite(Graphic::getInstance()->d3dDevice, &Font::getInstance()->sprite);
+			}
+		}
+
+		if (practical != 2)
+		{
+			Graphic::getInstance()->red = 0;
+			Graphic::getInstance()->green = 0;
+			Graphic::getInstance()->blue = 0;
+		}
 	}
-	
+
 	d3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(red, green, blue), 1.0f, 0);
 
 	d3dDevice->BeginScene();
 
-	//Sprite::getInstance()->drawSprite();
-	Font::getInstance()->write();
+	if (practical == 3 || practical == 4)
+	{
+		Sprite::getInstance()->drawSprite();
+	}
+	
+	else if (practical == 5)
+	{
+		Font::getInstance()->write();
+	}
 
 	d3dDevice->EndScene();
 

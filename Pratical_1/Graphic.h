@@ -12,7 +12,7 @@ public:
 	IDirect3DDevice9 * d3dDevice;
 	IDirect3D9 * direct3D9;
 
-	int red, blue, green, speed = 0, mode = 1;
+	int red, blue, green, speed, mode;
 	bool isRMax = false;
 	bool isGMax = false;
 	bool isBMax = false;
@@ -31,6 +31,10 @@ public:
 	void MaxStop(int keyIn);
 	void RandomRGB(int keyIn);
 	void Speed(int keyIn);
+
+	//practical change
+	int practical;
+	int prePractical;
 
 };
 

@@ -128,6 +128,7 @@ void Font::write()
 		font[0]->DrawText(sprite, string.c_str(), -1, &textRect[0], 0, D3DCOLOR_XRGB(255, 0, 0));
 		font[0]->DrawText(sprite, lineString.c_str(), -1, &lineRect, 0, D3DCOLOR_XRGB(255, 0, 0));
 		break;
+
 	default:
 		break;
 	}

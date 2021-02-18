@@ -29,6 +29,7 @@ LiauWindows::LiauWindows()
 	keyIn = 0;
 	mouseX = 0;
 	mouseY = 0;
+	practical = 1;
 }
 
 LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -79,7 +80,7 @@ void LiauWindows::createWindows()
 
 	RegisterClass(&wndClass);
 
-	g_hWnd = CreateWindowEx(0, wndClass.lpszClassName, "Windows", WS_OVERLAPPEDWINDOW, 0, 100, 400, 300, NULL, NULL, hInstance, NULL);
+	g_hWnd = CreateWindowEx(0, wndClass.lpszClassName, "Windows", WS_OVERLAPPEDWINDOW, 0, 100, 1080, 720, NULL, NULL, hInstance, NULL);
 	ShowWindow(g_hWnd, 1);
 
 }
@@ -104,6 +105,8 @@ bool LiauWindows::loop()
 
 	}
 
+	practicalChange();
+
 	Graphic::getInstance()->present();
 
 	if (keyIn != 0)
@@ -112,4 +115,12 @@ bool LiauWindows::loop()
 	}
 
 	return msg.message != WM_QUIT;
+}
+
+void LiauWindows::practicalChange()
+{
+	if (keyIn >= 97 && keyIn <= 105)
+	{
+		practical = keyIn - 96;
+	}
 }

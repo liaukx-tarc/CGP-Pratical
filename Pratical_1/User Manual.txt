@@ -1,7 +1,9 @@
+------------------------------------------------------
+[Change the Practical with the NUMPAD]
+eg:	Practical 3		= 3 (Numpad)
+
 Practical 2
 ------------------------------------------------------
-(Want to use the RGB function please uncomment the "setRGB()" in "Graphic::present()")
-
 full screen			= f
 speed++				= i
 speed--				= o
@@ -22,9 +24,9 @@ random RGB			= r
 
 Practical 3
 ------------------------------------------------------
-Fix view			= 1 (Numpad)
-Smaller view		= 2 (Numpad)
-Larger view			= 3 (Numpad)
+Fix view			= ,
+Smaller view		= .
+Larger view			= /
 Move up				= key up
 Move down			= key down
 Move right			= key right

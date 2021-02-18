@@ -40,6 +40,8 @@ public:
 
 	void drawNum();
 
+	//practical change
+	int practical;
 };
 
 
