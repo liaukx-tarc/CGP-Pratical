@@ -1,7 +1,6 @@
 #include "Windows.h"
 #include "Graphic.h"
-#include "Sprite.h"
-#include "Font.h"
+#include "GameStateManager.h"
 
 int main()
 //int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
@@ -9,20 +8,18 @@ int main()
 	LiauWindows* windows = LiauWindows::getInstance();
 	windows->createWindows();
 
-	if (!Graphic::getInstance()->createDirectX() || !Sprite::getInstance()->createSprite() || !Font::getInstance()->createFont())
+	if (!Graphic::getInstance()->createDirectX())
 	{
 		return 0;
 	}
 
 	while (windows->loop())
 	{
-
+		
 	}
 
 	windows->clearWindows();
 	Graphic::getInstance()->clearGraphic();
-	Sprite::getInstance()->clearSprite();
-	Font::getInstance()->clearFont();
 
 	delete windows;
 

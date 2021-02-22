@@ -1,5 +1,5 @@
 ------------------------------------------------------
-[Change the Practical with the NUMPAD]
+[Change the Practical with the NUMPAD] (start from 2)
 eg:	Practical 3		= 3 (Numpad)
 
 Practical 2

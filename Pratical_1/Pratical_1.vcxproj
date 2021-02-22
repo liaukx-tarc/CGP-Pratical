@@ -128,17 +128,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="GameStateManager.cpp" />
     <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Practical_2.cpp" />
+    <ClCompile Include="Practical_3.cpp" />
+    <ClCompile Include="Practical_4.cpp" />
+    <ClCompile Include="Practical_5.cpp" />
     <ClCompile Include="windows.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Font.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameStateManager.h" />
     <ClInclude Include="Graphic.h" />
+    <ClInclude Include="Practical_2.h" />
+    <ClInclude Include="Practical_3.h" />
+    <ClInclude Include="Practical_4.h" />
+    <ClInclude Include="Practical_5.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Sprite.h" />
     <ClInclude Include="Windows.h" />
   </ItemGroup>
   <ItemGroup>

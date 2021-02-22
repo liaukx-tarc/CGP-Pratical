@@ -1,6 +1,6 @@
 #include "Windows.h"
 #include "Graphic.h"
-#include "Sprite.h"
+#include "GameStateManager.h"
 
 //Singleton
 LiauWindows* LiauWindows::sInstance = NULL;
@@ -50,10 +50,7 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM 
 
 		LiauWindows::getInstance()->keyIn = wParam;
 
-		printf("wParam-%d speed-%d R-%d G-%d B-%d\n", wParam, Graphic::getInstance()->speed, 
-																Graphic::getInstance()->red, 
-																Graphic::getInstance()->green, 
-																Graphic::getInstance()->blue);
+		printf("wParam-%d\n", wParam);
 		break;
 
 	case WM_MOUSEMOVE:
@@ -107,6 +104,8 @@ bool LiauWindows::loop()
 
 	practicalChange();
 
+	GameStateManager::getInstance()->update();
+
 	Graphic::getInstance()->present();
 
 	if (keyIn != 0)
@@ -119,8 +118,9 @@ bool LiauWindows::loop()
 
 void LiauWindows::practicalChange()
 {
-	if (keyIn >= 97 && keyIn <= 105)
+	if (keyIn >= 98 && keyIn <= 105)
 	{
-		practical = keyIn - 96;
+		GameStateManager::getInstance()->preState = GameStateManager::getInstance()->currentState;
+		GameStateManager::getInstance()->currentState = keyIn - 98;
 	}
 }

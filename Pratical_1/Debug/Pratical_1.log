@@ -1,20 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Pratical_1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Font.cpp
-  Graphic.cpp
-c:\users\user\desktop\cgp pratical\pratical_1\graphic.cpp(62): warning C4805: '==': unsafe mix of type 'BOOL' and type 'bool' in operation
-  Sprite.cpp
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(227): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(234): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(271): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(275): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(279): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(321): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(325): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(329): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(333): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\sprite.cpp(388): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-  main.cpp
-  windows.cpp
-c:\users\user\desktop\cgp pratical\pratical_1\windows.cpp(37): warning C4101: 'keyIn': unreferenced local variable
-  Generating Code...
+  Practical_4.cpp
+c:\users\user\desktop\cgp pratical\pratical_1\practical_4.cpp(102): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
   Pratical_1.vcxproj -> C:\Users\user\Desktop\CGP Pratical\Debug\CGP_Pratical.exe
