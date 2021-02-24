@@ -23,6 +23,7 @@ void Practical_2::init()
 void Practical_2::update()
 {
 	keyIn = LiauWindows::getInstance()->keyIn;
+	fullscreen();
 	SetRGB();
 	Graphic::getInstance()->red = red;
 	Graphic::getInstance()->green = green;
@@ -62,6 +63,7 @@ void Practical_2::fullscreen()
 		Graphic::getInstance()->d3dPP.Windowed = d3dPP.Windowed;
 		Graphic::getInstance()->d3dPP.BackBufferWidth = d3dPP.BackBufferWidth;
 		Graphic::getInstance()->d3dPP.BackBufferHeight = d3dPP.BackBufferHeight;
+
 		Graphic::getInstance()->resetGraphic();
 	}
 }

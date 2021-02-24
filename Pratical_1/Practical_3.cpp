@@ -119,6 +119,13 @@ void Practical_3::changeView()
 			GameStateManager::getInstance()->preState = 1;
 		}
 
+		//clear the sprite in practical 6
+		else if (GameStateManager::getInstance()->preState == 4)
+		{
+			GameStateManager::getInstance()->stateList[4]->release();
+			GameStateManager::getInstance()->preState = 1;
+		}
+
 		if (keyIn == 188)
 		{
 			viewMode = 1;

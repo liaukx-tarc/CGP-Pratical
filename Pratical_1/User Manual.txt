@@ -54,3 +54,14 @@ Number 0-9	= 0-9 (Not Numpad)
 "*"			= * (Numpad)
 "/"			= / (Numpad)
 ------------------------------------------------------
+
+Practical 5
+------------------------------------------------------
+Font display mode	= [
+write word mode		= ]
+
+write word mode can key in A-Z.
+
+erase word			= backspace
+next line			= enter
+------------------------------------------------------

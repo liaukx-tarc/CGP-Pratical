@@ -3,6 +3,7 @@
 #include "Practical_3.h"
 #include "Practical_4.h"
 #include "Practical_5.h"
+#include "Practical_6.h"
 
 //singleton
 GameStateManager* GameStateManager::sInstance = NULL;
@@ -43,6 +44,10 @@ GameStateManager::GameStateManager()
 	Practical_5* practical_5 = new Practical_5();
 	practical_5->init();
 	stateList.push_back(practical_5);
+
+	Practical_6* practical_6 = new Practical_6();
+	practical_6->init();
+	stateList.push_back(practical_6);
 }
 
 GameStateManager::~GameStateManager()

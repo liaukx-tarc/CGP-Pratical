@@ -135,6 +135,7 @@
     <ClCompile Include="Practical_3.cpp" />
     <ClCompile Include="Practical_4.cpp" />
     <ClCompile Include="Practical_5.cpp" />
+    <ClCompile Include="Practical_6.cpp" />
     <ClCompile Include="windows.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="Practical_3.h" />
     <ClInclude Include="Practical_4.h" />
     <ClInclude Include="Practical_5.h" />
+    <ClInclude Include="Practical_6.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Windows.h" />
   </ItemGroup>
