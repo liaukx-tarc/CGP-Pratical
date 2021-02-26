@@ -1,6 +1,7 @@
 #include "Windows.h"
 #include "Graphic.h"
 #include "GameStateManager.h"
+#include "DirectInput.h"
 
 int main()
 //int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
@@ -8,10 +9,8 @@ int main()
 	LiauWindows* windows = LiauWindows::getInstance();
 	windows->createWindows();
 
-	if (!Graphic::getInstance()->createDirectX())
-	{
-		return 0;
-	}
+	Graphic::getInstance()->createDirectX();
+	DirectInput::getInstance()->CreateInput();
 
 	while (windows->loop())
 	{

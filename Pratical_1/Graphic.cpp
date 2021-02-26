@@ -24,13 +24,13 @@ void Graphic::releaseInsrance()
 
 Graphic::Graphic()
 {
-	ZeroMemory(&d3dPP, sizeof(d3dPP));;
+	ZeroMemory(&d3dPP, sizeof(d3dPP));
 	d3dDevice = NULL;
 	direct3D9 = NULL;
 	
 }
 
-bool Graphic::createDirectX()
+void Graphic::createDirectX()
 {
 	direct3D9 = Direct3DCreate9(D3D_SDK_VERSION);
 
@@ -46,10 +46,8 @@ bool Graphic::createDirectX()
 
 	if (FAILED(hr))
 	{
-		return false;
+		PostQuitMessage(0);
 	}
-
-	return true;
 }
 
 

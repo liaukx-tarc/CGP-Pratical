@@ -17,7 +17,7 @@ public:
 	static Graphic* getInstance();
 	static void releaseInsrance();
 
-	bool createDirectX();
+	void createDirectX();
 	void resetGraphic();
 	void present();
 	void clearGraphic();

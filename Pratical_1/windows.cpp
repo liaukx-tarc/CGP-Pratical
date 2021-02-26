@@ -1,6 +1,7 @@
 #include "Windows.h"
 #include "Graphic.h"
 #include "GameStateManager.h"
+#include "DirectInput.h"
 
 //Singleton
 LiauWindows* LiauWindows::sInstance = NULL;
@@ -103,6 +104,7 @@ bool LiauWindows::loop()
 	}
 
 	practicalChange();
+	DirectInput::getInstance()->InputLoop();
 
 	GameStateManager::getInstance()->update();
 
