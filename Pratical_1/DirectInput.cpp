@@ -90,16 +90,22 @@ void DirectInput::InputLoop()
 	}
 
 	//mouse
-	if (mouseState.rgbButtons[0] & 0x80 && !mouseButton[0])
+	if (mouseState.rgbButtons[0] & 0x80 && mouseButton[0] == 0)
 	{
 		printf("Left press\n");
-		mouseButton[0] = true;
+		mouseButton[0] = 1;
 	}
 
-	else if (!(mouseState.rgbButtons[0] & 0x80) && mouseButton[0])
+	else if (mouseState.rgbButtons[0] & 0x80)
+	{
+		printf("Left drawing\n");
+		mouseButton[0] = 2;
+	}
+
+	else if (!(mouseState.rgbButtons[0] & 0x80) && mouseButton[0] == 2)
 	{
 		printf("Left release\n");
-		mouseButton[0] = false;
+		mouseButton[0] = 0;
 	}
 	
 	mouseMoveX = mouseState.lX;
@@ -114,7 +120,7 @@ void DirectInput::InputLoop()
 
 	if (mouseMoveX != 0 || mouseMoveY != 0)
 	{
-		printf("X-%d  Y-%d\n", mousePosX, mousePosY);
+		//printf("X-%d  Y-%d\n", mousePosX, mousePosY);
 	}
 }
 

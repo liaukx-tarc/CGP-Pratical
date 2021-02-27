@@ -21,7 +21,7 @@ public:
 	LPDIRECTINPUTDEVICE8 dInputMouseDevice;
 	DIMOUSESTATE mouseState;
 	int mouseMoveX, mouseMoveY, mousePosX, mousePosY;
-	bool mouseButton[3];
+	int mouseButton[3];
 	
 
 	void CreateInput();
