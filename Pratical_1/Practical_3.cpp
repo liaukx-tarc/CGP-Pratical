@@ -38,6 +38,10 @@ void Practical_3::init()
 	spriteRect.bottom = 300;
 }
 
+void Practical_3::fixedUpdate()
+{
+}
+
 void Practical_3::update()
 {
 	keyIn = LiauWindows::getInstance()->keyIn;

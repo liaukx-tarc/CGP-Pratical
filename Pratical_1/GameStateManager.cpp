@@ -4,6 +4,7 @@
 #include "Practical_4.h"
 #include "Practical_5.h"
 #include "Practical_6.h"
+#include "Practical_7.h"
 
 //singleton
 GameStateManager* GameStateManager::sInstance = NULL;
@@ -27,6 +28,7 @@ void GameStateManager::releaseInsrance()
 GameStateManager::GameStateManager()
 {
 	currentState = 0;
+	framesToUpdate = 0;
 	preState = 0;
 
 	Practical_2* practical_2 = new Practical_2();
@@ -48,6 +50,13 @@ GameStateManager::GameStateManager()
 	Practical_6* practical_6 = new Practical_6();
 	practical_6->init();
 	stateList.push_back(practical_6);
+
+	Practical_7* practical_7 = new Practical_7();
+	practical_7->init();
+	stateList.push_back(practical_7);
+
+	gTime = new GTime();
+	gTime->init(60);
 }
 
 GameStateManager::~GameStateManager()
@@ -58,11 +67,21 @@ GameStateManager::~GameStateManager()
 		delete stateList[i];
 		stateList[i] = NULL;
 	}
+
+	delete gTime;
 }
 
 void GameStateManager::update()
 {
 	stateList[currentState]->update();
+
+	framesToUpdate = gTime->framesToUpdate();
+
+	for (int i = 0; i < framesToUpdate; i++)
+	{
+		stateList[currentState]->fixedUpdate();
+	}
+
 }
 
 void GameStateManager::draw()

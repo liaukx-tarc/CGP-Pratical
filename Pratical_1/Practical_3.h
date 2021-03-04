@@ -21,6 +21,7 @@ public:
 	int spriteX, spriteY, mouseX, mouseY, keyIn, bgTexture, cursorColor;
 
 	void init();
+	void fixedUpdate();
 	void update();
 	void draw();
 	void release();

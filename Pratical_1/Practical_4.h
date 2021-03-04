@@ -15,6 +15,7 @@ public:
 	int num, weight, height;
 
 	void init();
+	void fixedUpdate();
 	void update();
 	void draw();
 	void release();

@@ -1,10 +1,11 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Pratical_1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Practical_6.cpp
+  Practical_7.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(295): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(301): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(324): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(330): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(353): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
-c:\users\user\desktop\cgp pratical\pratical_1\practical_6.cpp(361): warning C4244: 'argument': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(60): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(61): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(62): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(98): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(99): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(100): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\user\desktop\cgp pratical\pratical_1\practical_7.cpp(101): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
   Pratical_1.vcxproj -> C:\Users\user\Desktop\CGP Pratical\Debug\CGP_Pratical.exe

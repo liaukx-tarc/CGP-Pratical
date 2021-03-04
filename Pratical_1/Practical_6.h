@@ -27,6 +27,7 @@ public:
 	int blue[6] = { 255,0,0,255,0,255 };
 
 	void init();
+	void fixedUpdate();
 	void update();
 	void draw();
 	void release();

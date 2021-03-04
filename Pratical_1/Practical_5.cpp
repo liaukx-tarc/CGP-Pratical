@@ -86,6 +86,10 @@ void Practical_5::init()
 	}
 }
 
+void Practical_5::fixedUpdate()
+{
+}
+
 void Practical_5::update()
 {
 	keyIn = LiauWindows::getInstance()->keyIn;

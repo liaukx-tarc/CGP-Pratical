@@ -18,9 +18,10 @@ public:
 	static void releaseInsrance();
 
 	void createDirectX();
-	void resetGraphic();
 	void present();
 	void clearGraphic();
+
+	void resetGraphic();
 };
 
 #endif // !GRAPHIC

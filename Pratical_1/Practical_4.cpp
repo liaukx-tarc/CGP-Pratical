@@ -43,6 +43,10 @@ void Practical_4::init()
 	height = Graphic::getInstance()->d3dPP.BackBufferHeight / 2;
 }
 
+void Practical_4::fixedUpdate()
+{
+}
+
 void Practical_4::update()
 {
 	int keyIn = LiauWindows::getInstance()->keyIn;

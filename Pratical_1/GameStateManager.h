@@ -1,8 +1,8 @@
 #ifndef GAMESTATEMANAGER
 #include <stdio.h>
 #include <vector>
-
 #include "GameState.h"
+#include "GTime.h"
 
 class GameStateManager
 {
@@ -15,8 +15,10 @@ public:
 	static GameStateManager* getInstance();
 	static void releaseInsrance();
 
-	int currentState, preState;
+	int currentState, preState, framesToUpdate;
 	std::vector<GameState*> stateList;
+
+	GTime * gTime;
 
 	void update();
 	void draw();

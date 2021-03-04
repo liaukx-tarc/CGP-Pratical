@@ -19,6 +19,7 @@ public:
 	std::string string, lineString;
 
 	void init();
+	void fixedUpdate();
 	void update();
 	void draw();
 	void release();
