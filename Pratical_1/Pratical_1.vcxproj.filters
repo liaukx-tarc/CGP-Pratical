@@ -13,84 +13,96 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Device">
+      <UniqueIdentifier>{b410b229-7145-4db1-9b8d-03c8145f5028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Practical">
+      <UniqueIdentifier>{0786620c-8b24-4818-9872-9e36ed4dfd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Device">
+      <UniqueIdentifier>{152f824a-d070-444a-b02d-0aca8f9020c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Practical">
+      <UniqueIdentifier>{2a414732-7319-4473-8615-d53836d38d6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="windows.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_2.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="DirectInput.cpp">
+      <Filter>Source Files\Device</Filter>
     </ClCompile>
     <ClCompile Include="GameStateManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Device</Filter>
     </ClCompile>
-    <ClCompile Include="Practical_4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DirectInput.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_7.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Graphic.cpp">
+      <Filter>Source Files\Device</Filter>
     </ClCompile>
     <ClCompile Include="GTime.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_2.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_3.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_4.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_5.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_6.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_7.cpp">
+      <Filter>Source Files\Practical</Filter>
+    </ClCompile>
+    <ClCompile Include="windows.cpp">
+      <Filter>Source Files\Device</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Windows.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="DirectInput.h">
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
     <ClInclude Include="GameState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_2.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
     <ClInclude Include="GameStateManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
-    <ClInclude Include="Practical_4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DirectInput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_7.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Graphic.h">
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
     <ClInclude Include="GTime.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_2.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_3.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_4.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_5.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_6.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_7.h">
+      <Filter>Header Files\Practical</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows.h">
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

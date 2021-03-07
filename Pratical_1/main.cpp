@@ -19,8 +19,12 @@ int main()
 
 	windows->clearWindows();
 	Graphic::getInstance()->clearGraphic();
-
+	DirectInput::getInstance()->clearInput();
+	
 	delete windows;
+	Graphic::getInstance()->releaseInsrance();
+	DirectInput::getInstance()->releaseInsrance();
+	GameStateManager::getInstance()->releaseInsrance();
 
 	return 0;
 }
